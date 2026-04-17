@@ -10,7 +10,7 @@ from telegram.ext import (
 
 # ============================================================
 #  ضع الـ Token بتاعك هنا
-TOKEN = 8737835004:AAF9IYUt9hbOGlAZ7YRetPx_6h6kAnhchXc"
+import os TOKEN = os.environ.get("TOKEN", "")
 # ============================================================
 
 CAIRO_TZ = pytz.timezone("Africa/Cairo")
