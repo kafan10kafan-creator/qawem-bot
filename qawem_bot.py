@@ -110,7 +110,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(f"🎯 يا *{name}* — إيه أهدافك النهارده؟ 📝", parse_mode="Markdown")
     elif "تقييم" in text:
         await update.message.reply_text(f"📊 يا *{name}* — من 1 لـ 10 إيه تقييمك لإنتاجيتك؟", parse_mode="Markdown")
-    elif "تيب" in text:
+    elif "تيب" in text or "إنتاجية" in text:
         tips = ["🧠 25 دقيقة شغل و5 راحة — Pomodoro", "📵 افتح السوشيال في أوقات محددة بس", "📋 اكتب مهامك بالليل", "🏃 ابدأ بأصعب مهمة الصبح", "💧 اشرب ميه كتير", "😴 7 ساعات نوم على الأقل"]
         await update.message.reply_text(f"💡 *تيب النهارده يا {name}:*\n\n{random.choice(tips)}", parse_mode="Markdown")
     elif "streak" in text or "🔥" in text:
