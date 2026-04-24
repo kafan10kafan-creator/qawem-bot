@@ -303,7 +303,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # تشغيل البوت
 # ============================================================
 def main():
-    app = ApplicationBuilder().token(TOKEN).updater(None).build()
+    app = ApplicationBuilder().token(TOKEN).build()
     conv = ConversationHandler(
         entry_points=[CommandHandler("start", start)],
         states={
