@@ -1,8 +1,0 @@
-[phases.setup]
-nixPkgs = ["python311"]
-
-[phases.build]
-cmds = ["pip3.11 install -r requirements.txt"]
-
-[start]
-cmd = "python3.11 qawem_bot.py"
